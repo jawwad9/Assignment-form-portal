@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customer Entry Form</title>
+  <!-- Include a font icon library (optional) for the plus/trash icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-d7JU3NEqR0u4DvCOl9ZJFg3g4lZoZk3IG4KciqA+ISzvO9I2wBv0R+JpU/f8i+bApicUL9rO4zKlfvA6z+YqKg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+
+
+
+  <!-- Container for the form -->
+  <div class="container">
+    <div class="top-bar">
+        <h1><b>Customer Entry Form</b></h1>
+    <div>
+        <button class="dashboard-btn">Dashboard</button>
+        <label for="id">Date:</label>
+        <input class="date" type="date" id="date" />
+    </div>
+    </div>
+
+    <!-- Tab optional -->
+    <nav class="tab-nav">
+      <button class="tab active">Personal Information</button>
+      <button class="tab">Contact/Reference</button>
+      <button class="tab">Work Information</button>
+    </nav>
+
+    <!-- Form Section -->
+    <form class="form-card">
+      <h2>Personal Details</h2>
+
+      <!-- Row 1 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="id">ID</label>
+          <input type="text" id="id" placeholder="Enter ID" />
+        </div>
+        <div class="form-group">
+          <label for="lead">Lead</label>
+          <div class="input-icon-group">
+            <select id="lead">
+              <option>Select Lead</option>
+            </select>
+            <button class="bg-green-500 text-white px-2 py-2 rounded"><i class="fas fa-plus"></i></button>
+            <button class="bg-red-500 text-white px-2 py-2 rounded"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Name" />
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="father">Father</label>
+          <input type="text" id="father" placeholder="Enter Father Name" />
+        </div>
+        <div class="form-group">
+          <label for="cast">Cast</label>
+          <div class="input-icon-group">
+            <select id="cast">
+              <option>Select Cast</option>
+            </select>
+            <button class="bg-green-500 text-white px-2 py-2 rounded"><i class="fas fa-plus"></i></button>
+            <button class="bg-red-500 text-white px-2 py-2 rounded"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="religion">Religion</label>
+          <div class="input-icon-group">
+            <select id="religion">
+              <option>Select Religion</option>
+            </select>
+           <button class="bg-green-500 text-white px-2 py-2 rounded"><i class="fas fa-plus"></i></button>
+            <button class="bg-red-500 text-white px-2 py-2 rounded"><i class="fas fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="marital-status">Marital Status</label>
+          <select id="marital-status">
+            <option>Select Marital Status</option>
+            <option>Single</option>
+            <option>Married</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="form-group">
+          <label for="cnic">CNIC</label>
+          <input type="text" id="cnic" placeholder="00000-0000000-0" />
+        </div>
+      </div>
+
+      <!-- Save Button -->
+      <div class="form-actions">
+        <button type="submit" class="save-btn">Save</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
